@@ -1,6 +1,6 @@
 # Transfer Function Parser
 
-Simple parser for transfer functions specified in an xml format for a [QGradient|http://doc.qt.io/qt-5/qgradient.html].
+Simple parser for transfer functions specified in an xml format for a [QGradient](http://doc.qt.io/qt-5/qgradient.html).
 
 An example transfer function might look like this:
 
