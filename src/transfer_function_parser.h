@@ -4,21 +4,27 @@
 
 #include <QGradient>
 #include <QString>
+#include <QXmlDefaultHandler>
 
 /**
  * \brief 
  *
  * 
  */
+class QGradientContentHandler;
+
 class TransferFunctionParser
 {
 public:
-  TransferFunctionParser() = default;
+  TransferFunctionParser(QString path);
 
-  static QGradient parse(QString path);
+  QGradient *parse();
 
 private:
   /* data */
+  QXmlSimpleReader *xmlReader;
+  QXmlInputSource *source;
+  QGradientContentHandler *handler;
 };
 
 #endif  // SRC_TRANSFER_FUNCTION_PARSER_H_
