@@ -6,13 +6,12 @@
 #include <QString>
 #include <QXmlDefaultHandler>
 
-/**
- * \brief 
- *
- * 
- */
 class QGradientContentHandler;
 
+/**
+ * \brief Parser for XML representation of a QGradient used as transfer function
+ *
+ */
 class TransferFunctionParser
 {
  public:
