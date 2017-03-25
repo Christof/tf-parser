@@ -15,13 +15,12 @@ class QGradientContentHandler;
 
 class TransferFunctionParser
 {
-public:
+ public:
   TransferFunctionParser(QString path);
 
   QGradient *parse();
 
-private:
-  /* data */
+ private:
   QXmlSimpleReader *xmlReader;
   QXmlInputSource *source;
   QGradientContentHandler *handler;
